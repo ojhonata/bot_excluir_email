@@ -49,8 +49,8 @@ def remover_email(conexao, id_email):
 def main():
     imap_server = "imap.gmail.com"
     conexao = imaplib.IMAP4_SSL(imap_server)
-    usuario = 'jhonatacanevare6@gmail.com'
-    senha = 'memmxpgemsxtjhnx'
+    usuario = input('Digite seu email: ')
+    senha = input('Digite sua senha de aplicativo: ')
 
     login(usuario, senha, conexao)
     
